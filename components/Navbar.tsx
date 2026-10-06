@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 const Navbar = () => {
   return (
@@ -8,10 +9,10 @@ const Navbar = () => {
                 YehyaCareerBath
             </div>
            <div className="space-x-14 text-xl">
-            <a href="/dashboard" className="text-gray-300 hover:text-white">Home</a>
-            <a href="/plan" className="text-gray-300 hover:text-white">Plan</a>
-            <a href="/opportunities" className="text-gray-300 hover:text-white">Opportunity</a>
-            <a href="/dashboard" className="text-gray-300 hover:text-white">Dashboard</a>
+            <Link href="/" className="text-gray-300 hover:text-white">Home</Link>
+            <Link href="/plan" className="text-gray-300 hover:text-white">Plan</Link>
+            <Link href="/opportunities" className="text-gray-300 hover:text-white">Opportunity</Link>
+            <Link href="/dashboard" className="text-gray-300 hover:text-white">Dashboard</Link>
             </div>
         </div>
     </nav>
