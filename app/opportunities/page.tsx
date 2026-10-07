@@ -1,5 +1,6 @@
-import React from 'react'
-
+import React from "react";
+import Oppcard from "../../components/Oppcard";
+import Navbar from "../../components/Navbar";
 export const opportunities = [
   {
     id: "1",
@@ -29,10 +30,35 @@ export const opportunities = [
 
 const OpportunitiesPage = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    
+    <main className="min-h-screen bg-slate-50">
+      <Navbar />
+      <section className="mx-auto max-w-7xl px-6 py-16">
 
-export default OpportunitiesPage
+        <div className="mb-12 text-center">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-blue-600">
+            Explore Opportunities
+          </p>
+
+          <h1 className="text-3xl font-bold text-slate-900 md:text-4xl">
+            Compare opportunities before deciding where to apply
+          </h1>
+
+          <p className="mx-auto mt-4 max-w-2xl text-slate-500">
+            Review each role, compare the company and location, and open the
+            opportunity that fits your career path.
+          </p>
+        </div>
+=
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {opportunities.map((opp) => (
+            <Oppcard key={opp.id} opportunity={opp} />
+          ))}
+        </div>
+
+      </section>
+    </main>
+  );
+};
+
+export default OpportunitiesPage;
