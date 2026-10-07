@@ -1,5 +1,4 @@
 "use client";
-import Navbar from "../../components/Navbar";
 import type {Milestone} from '../../types/Milestone'
 import {useState} from 'react'
 import Link from 'next/link'
@@ -57,7 +56,6 @@ const PlanPage = () => {
 }
  return (
   <main className="min-h-screen bg-slate-50">
-    <Navbar />
     <section className="mx-auto max-w-7xl px-6 py-16">
     <Link
   href="/"

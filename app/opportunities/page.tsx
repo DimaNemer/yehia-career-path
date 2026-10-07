@@ -1,6 +1,5 @@
 import React from "react";
 import Oppcard from "../../components/Oppcard";
-import Navbar from "../../components/Navbar";
 export const opportunities = [
   {
     id: "1",
@@ -32,7 +31,6 @@ const OpportunitiesPage = () => {
   return (
     
     <main className="min-h-screen bg-slate-50">
-      <Navbar />
       <section className="mx-auto max-w-7xl px-6 py-16">
 
         <div className="mb-12 text-center">

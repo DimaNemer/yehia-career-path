@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Yehya Career Path
 
-## Getting Started
+## About the Project
 
-First, run the development server:
+Yehya Career Path is a Next.js website that helps Yehia organize his job search after graduating in Computer Science from the Lebanese University.
 
-```bash
+It gives him one place to follow his two-month plan, explore job opportunities, view role details, and track his applications. The goal is to help him stay organized and always know what his next step should be.
+
+## Run the Project
+
+First, install the dependencies:
+
+npm install
+
+Then run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in the browser to see the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Questions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 1. Why did you use `await` when reading `params`?
 
-## Learn More
+I used `await` because Next.js gives `params` as a Promise in the dynamic page. I need to wait for it before I can get the `id` and use it to find the correct opportunity.
 
-To learn more about Next.js, take a look at the following resources:
+## 2. Why is the route ID a string?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ ID is a string because the value that comes from the URL is a string. that's why kept the IDs in my opportunities data as strings so I can compare them directly without converting them.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 3. What belongs in the dashboard layout, and what belongs in each dashboard page?
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ Dashboard layout for the parts that should stay the same, mainly the Overview and Applications navigation. The individual pages contain the content that changes. The overview page shows the application summary, while the applications page shows the list of applications.

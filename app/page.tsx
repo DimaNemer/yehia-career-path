@@ -1,11 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 
 const Page = () => {
   return (
     <>
-      <Navbar />
 
       <main>
         <section className="min-h-[calc(100vh-100px)] flex items-center justify-center px-6 py-16">
